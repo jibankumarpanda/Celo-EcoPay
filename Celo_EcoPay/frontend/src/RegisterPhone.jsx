@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useCelo } from "react-celo";
+import useCelo from "./useCelo";
 import { getPhoneIdentifier } from "../utils/celo";
 import { ethers } from "ethers";
 import PhoneMappingAbi from "../../abi/PhoneMapping.json"; // assume we compile and copy ABI
 
 export default function RegisterPhone({ phoneMappingAddress }) {
-  const { kit, address, web3 } = useCelo(); // react-celo provides kit or provider depending on version
+  const { kit, address, web3 } = useCelo(); // local hook provides web3 and address
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState("");
 

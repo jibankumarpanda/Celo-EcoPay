@@ -1,42 +1,235 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* --- Navbar Styles --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    opacity: 0.7;
+    transition: opacity 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-links a:hover {
+    opacity: 1;
 }
 
-.card {
-  padding: 2em;
+.nav-log-in {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--color-text-dark);
 }
 
-.read-the-docs {
-  color: #888;
+.nav-get-started {
+    background-color: var(--color-secondary-purple);
+    color: var(--color-text-light);
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* --- Hero Section Styles --- */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-tagline {
+    text-transform: uppercase;
+    color: var(--color-primary-green);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary-purple);
+    color: var(--color-text-light);
+    border: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    border: 1px solid #ccc;
+}
+
+.hero-image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    /* Aspect ratio close to the image in the screenshot */
+    padding-bottom: 60%; 
+    background-image: url('path/to/your/sunset-image.jpg'); /* Replace this */
+    background-color: #555; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hero-users {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.avatars-placeholder {
+    font-size: 1.5rem;
+}
+
+/* --- Feature Highlights Section Styles --- */
+.feature-section {
+    background-color: var(--color-background-light);
+    padding: 4rem 5% 6rem;
+    text-align: center;
+}
+
+.section-title {
+    color: #f75c40; /* Guessing the red/orange line color */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--color-secondary-purple);
+    background-color: var(--color-card-purple-light);
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+/* --- Eco Impact Stats Section Styles --- */
+.impact-section {
+    padding: 3rem 5%;
+    text-align: center;
+    background-color: var(--color-card-purple-light);
+}
+
+.impact-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 1px; /* To create subtle dividers if needed, or simply space them out */
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 20px 10px;
+    border-right: 1px solid #eee;
+}
+
+.stat-card:last-child {
+    border-right: none;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-secondary-purple);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.view-report-link {
+    display: block;
+    margin-top: 20px;
+    color: var(--color-secondary-purple);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
 }

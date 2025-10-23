@@ -1,5 +1,5 @@
 import React from "react";
-import { useCelo } from "react-celo";
+import useCelo from "./useCelo";
 
 export default function WalletConnectButton() {
   const { address, connect } = useCelo();
