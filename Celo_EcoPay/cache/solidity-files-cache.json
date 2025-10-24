@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\hackathon projects\\Celo-EcoPay\\Celo_EcoPay\\contracts\\PaymentContract.sol": {
+      "lastModificationDate": 1761202200551,
+      "contentHash": "bef5338c3a665b2f2eacd56241fd6ec0",
+      "sourceName": "contracts/PaymentContract.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PaymentContract"
+      ]
+    },
+    "D:\\hackathon projects\\Celo-EcoPay\\Celo_EcoPay\\contracts\\PhoneMapping.sol": {
+      "lastModificationDate": 1761202200551,
+      "contentHash": "5003ebb3bcc47d65ba1a02c9f37ee79e",
+      "sourceName": "contracts/PhoneMapping.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PhoneMapping"
+      ]
+    }
+  }
+}
